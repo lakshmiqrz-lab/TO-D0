@@ -1,27 +1,11 @@
+
 import { Routes, Route, Link } from 'react-router-dom'
 import TodoList from './pages/TodoList'
 import AddTodo from './pages/AddTodo'
 import EditTodo from './pages/EditTodo'
-import { useState, useEffect } from 'react'
-import axios from 'axios'
 
 function App() {
-  const [todos, setTodos] = useState([]);
 
-const getTodos = async () => {
-  const response = await axios.get(API);
-  setTodos(response.data);
-};
-
-useEffect(() => {
-  getTodos();
-}, []);
-{
-  todos.map((item) => (
-  <div key={item.id}>
-    <h3>{item.title}</h3>
-  </div>
-))}
   return (
     <div className="container">
 
