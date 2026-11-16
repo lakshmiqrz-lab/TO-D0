@@ -9,7 +9,7 @@ function EditTodo() {
   const { id } = useParams()
   const navigate = useNavigate()
 
-  const API = "http://localhost:3000/todos"
+  const API = "https://todo-backend-nwfp.onrender.com/todos"
 
   const getTodo = async () => {
     const res = await axios.get(`${API}/${id}`)

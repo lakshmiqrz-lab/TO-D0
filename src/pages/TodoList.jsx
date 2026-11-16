@@ -7,8 +7,7 @@ function TodoList() {
 
   const [todos, setTodos] = useState([])
 
-  const API = "http://localhost:3000/todos"
-
+const API = "https://todo-backend-nwfp.onrender.com/todos"
  
   const getTodos = async () => {
     const res = await axios.get(API)

@@ -9,7 +9,7 @@ function AddTodo() {
   const [status, setStatus] = useState("Pending")
   const navigate = useNavigate()
 
-  const API = "http://localhost:3000/todos"
+  const API = "https://todo-backend-nwfp.onrender.com/todos"
 
   const addTodo = async (e) => {
 
